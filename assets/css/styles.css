@@ -97,7 +97,7 @@ img {
   padding-block: 5rem 1.5rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   font-family: var(--second-font);
   font-weight: initial;
@@ -124,7 +124,7 @@ img {
   position: absolute;
   background-color: var(--first-color);
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(95px);
   z-index: -1;
 }
 
@@ -349,11 +349,82 @@ img {
 }
 
 /*=============== CATEGORY ===============*/
-
+.category .shape-small{
+  top: 25rem;
+  left: -4rem;
+}
+.category{
+  position: relative;
+}
+.category-container{
+  margin-top: 5rem;
+  grid-template-columns: 228px;
+  justify-content: center;
+  row-gap: 5rem;
+}
+.category-card{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+.category-img{
+  width: 120px;
+  position: absolute;
+  inset: 0;
+  margin: 0 auto;
+  top: -3rem;
+  transition: transform 0.3s;
+}
+.category-title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+.category-description{
+  font-size: var(--small-font-size);
+}
+.category-star{
+  width: 40px;
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  transform: rotate(15deg);
+}
+.category-card:hover .category-img{
+  transform: translateY(-15px);
+}
 
 /*=============== ABOUT ===============*/
-
-
+.about{
+  position: relative;
+}
+.about-container{
+  row-gap: 4rem;
+}
+.about-data{
+  text-align: center;
+}
+.about-container .section-title{
+  margin-bottom: 2rem;
+}
+.about-description{
+  margin-bottom: 2rem;
+}
+.about-img{
+  width: 300px;
+  justify-self: center; 
+}
+.about .shape-big{
+  bottom: -2rem;
+  left: -10rem;
+}
+.about .shape-small{
+  top: 2rem;
+  right: -5rem;
+}
 /*=============== ITEMS ===============*/
 
 
