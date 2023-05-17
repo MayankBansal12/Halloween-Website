@@ -19,8 +19,12 @@ function LinkAction(){
 }
 navList.forEach(n=>n.addEventListener("click",LinkAction));
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-
+/*============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader(){
+    const header=document.getElementById("header");
+    this.scrollY>=50?header.classList.add("bg-header"):header.classList.remove("bg-header");
+}
+window.addEventListener("scroll",scrollHeader);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
