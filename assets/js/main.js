@@ -30,6 +30,10 @@ window.addEventListener("scroll",scrollHeader);
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
+function showScroll(){
+    const scrollUp=document.getElementById("scroll-up");
+    this.scrollY>=350?scrollUp.classList.add("show-scroll"):scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll",showScroll);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
